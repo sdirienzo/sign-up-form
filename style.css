@@ -1,0 +1,34 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+aside {
+    width: 33%;
+}
+
+main {
+    width: 67%;
+}
+
+main > section:nth-child(1) {
+    height: 35%;
+}
+
+main > section:nth-child(2) {
+    height: 30%;
+}
+
+main > section:nth-child(3) {
+    height: 35%;
+}
