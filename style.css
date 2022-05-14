@@ -121,9 +121,27 @@ input[type="password"] {
 }
 
 main > section:nth-child(3) {
-    /* height: 35%; */
     height: 100%;
     padding-left: 50px;
     padding-right: 50px;
     background-color: #f9fafb;
+}
+
+button {
+    width: 200px;
+    font-size: 16px;
+    background-color: #596D48;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 12px 40px;
+    cursor: pointer;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: #596D48;
 }
