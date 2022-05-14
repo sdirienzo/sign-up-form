@@ -11,7 +11,6 @@ html {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
 }
 
 body {
@@ -23,7 +22,9 @@ body {
 aside {
     display: flex;
     flex-direction: column;
-    max-width: 35%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 500px;
     background-image: url("assets/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: cover;
 }
@@ -63,9 +64,9 @@ main > section:nth-child(1) {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 350px;
     padding-left: 50px;
     padding-right: 50px;
-    height: 35%;
     background-color: #f9fafb;
 }
 
@@ -82,10 +83,47 @@ main > section:nth-child(1) > p > span {
 }
 
 main > section:nth-child(2) {
-    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+main>section:nth-child(2)>p {
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    gap: 75px;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+   width: 250px;
+   padding: 6px;
+   border: 1px solid #E5E7EB;
+   border-radius: 4px; 
 }
 
 main > section:nth-child(3) {
-    height: 35%;
+    /* height: 35%; */
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: #f9fafb;
 }
